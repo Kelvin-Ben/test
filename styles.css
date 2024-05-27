@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+.form {
+  width: 90%;
+  min-height: 10rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.area, .services {
+  display: flex;
+  flex-direction: column;
+  min-width: 35%;
+  margin: 1rem 0;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.btn-blue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  min-width: 15%;
+  border: none;
+  background-color: rgb(111, 131, 245);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.serviceArea{
+  height: 3rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #978e8e;
+}
+#service {
+  height: 3rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 5px;
+  color: #978e8e;
+}
+/* styling second component */
+.rental {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  min-height: 4rem;
+  margin: auto;
+}
+.choose {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  list-style: none;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+  height: 12rem;
+}
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid goldenrod;
+  width: 75%;
+  height: 70%;
+  border-radius: 10px;
+}
+.img {
+  width: 50%;
+}
+.heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 1rem 1.2rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .form {
+    justify-content: space-between;
+  }
+  .wrapper {
+    width: 70%;
+    justify-content: space-between;
+  }
+  .btn-blue {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form {
+    flex-direction: column;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .choose {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+  .area, .services {
+    width: 90%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-blue {
+    width: 10rem;
+    padding: 1rem auto;
+  }
+
+}
+@media screen and (max-width: 540px) {
+  .choose {
+    grid-template-columns: 1fr;
+  }
+  .heading {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}

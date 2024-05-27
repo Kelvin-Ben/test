@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Component</title>
+  </head>
+  <body>
+    <main>
+      <form action="" class="form">
+        <div class="wrapper">
+          <div class="area">
+            <label for="servicearea">Service Area</label>
+            <select
+              name="servicearea"
+              id="servicearea"
+              class="serviceArea"
+              required
+            >
+              <option value="" disabled selected>Service Area</option>
+              <option value="Kenya">Kenya</option>
+              <option value="Uganda">Uganda</option>
+              <option value="Tanzania">Tanzania</option>
+              <option value="Burundi">Burundi</option>
+              <option value="Rwanda">Rwanda</option>
+              <option value="Nigeria">Nigeria</option>
+            </select>
+          </div>
+
+          <div class="services">
+            <label for="service">Services</label>
+            <select
+              name="services"
+              id="service"
+              required
+            >
+              <option value="" disabled selected>Services</option>
+              <option value="Kenya">Design</option>
+              <option value="Uganda">Cleaning</option>
+              <option value="Tanzania">Washing</option>
+              <option value="Burundi">Tree Planting</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-blue">Find Services</button>
+      </form>
+      <section class="rental">
+        <h1 class="heading">van rental</h1>
+        <ul class="choose">
+          <li class="list">
+            <a href="#" class="link">
+              <img src="./drop_shadow_down_icon.png" alt="" class="img">
+            </a>
+            Digital Gift Box
+          </li>
+          <li class="list">
+            <a href="#" class="link">
+              <img src="./drop_shadow_down_icon.png" alt="" class="img">
+            </a>
+            Mistery Gift Box
+          </li>
+          <li class="list">
+            <a href="#" class="link">
+              <img src="./drop_shadow_down_icon.png" alt="" class="img">
+            </a>
+            Gift Box for men
+          </li>
+          <li class="list">
+            <a href="#" class="link">
+              <img src="./drop_shadow_down_icon.png" alt="" class="img">
+            </a>
+            Encourage Gift Box
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
